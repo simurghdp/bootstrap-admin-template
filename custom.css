@@ -1,0 +1,179 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	dir: rtl;
+	background: rgba(0, 0, 0, 0.1);
+	font-family: Shabnam;
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+#layout {
+	min-height: 0;
+}
+
+#sidebar #date {
+	background: url(spring.png);
+	background-size: cover;
+	text-shadow: 1px 1px 0px #000;
+}
+
+#content {
+	overflow-y: auto;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1020;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1400px) {
+	
+	#sidebar {
+		overflow-y: auto;
+		margin-right: 0%;
+		transition: all 0.3s;
+		z-index: 1021;
+		position: static;
+		top: auto;
+		right: auto;
+		max-height: 100%;
+	}
+	
+	#sidebar.active {
+		margin-right: 0%;
+	}
+	
+	#overlay.active {
+		display: none;
+	}
+	
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+	
+	#sidebar {
+		overflow-y: auto;
+		margin-right: 0%;
+		transition: all 0.3s;
+		z-index: 1021;
+		position: static;
+		top: auto;
+		right: auto;
+		max-height: 100%;
+	}
+	
+	#sidebar.active {
+		margin-right: 0%;
+	}
+	
+	#overlay.active {
+		display: none;
+	}
+	
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	#sidebar {
+		overflow-y: auto;
+		margin-right: 0%;
+		transition: all 0.3s;
+		z-index: 1021;
+		position: static;
+		top: auto;
+		right: auto;
+		max-height: 100%;
+	}
+	
+	#sidebar.active {
+		margin-right: 0%;
+	}
+	
+	#overlay.active {
+		display: none;
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	#sidebar {
+		overflow-y: auto;
+		margin-right: 0%;
+		transition: all 0.3s;
+		z-index: 1021;
+		position: static;
+		top: auto;
+		right: auto;
+		max-height: 100%;
+	}
+	
+	#sidebar.active {
+		margin-right: 0%;
+	}
+	
+	#overlay.active {
+		display: none;
+	}
+	
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	
+	#sidebar {
+		overflow-y: auto;
+		margin-right: -100%;
+		transition: all 0.3s;
+		z-index: 1021;
+		position: fixed;
+		top: 56px;
+		right: 0;
+		max-height: calc(100% - 56px);
+	}
+	
+	#sidebar.active {
+		margin-right: 0%;
+	}
+	
+	#overlay.active {
+		display: block;
+		opacity: 1;
+	}
+	
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+	
+	#sidebar {
+		overflow-y: auto;
+		margin-right: -100%;
+		transition: all 0.3s;
+		z-index: 1021;
+		position: fixed;
+		top: 56px;
+		right: 0;
+		max-height: calc(100% - 56px);
+	}
+	
+	#sidebar.active {
+		margin-right: 0%;
+	}
+	
+	#overlay.active {
+		display: block;
+		opacity: 1;
+	}
+	
+}
